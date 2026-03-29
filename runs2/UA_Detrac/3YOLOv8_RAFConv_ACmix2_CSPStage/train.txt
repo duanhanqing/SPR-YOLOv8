@@ -1,0 +1,60 @@
+300 epochs completed in 3.467 hours.
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs2/UA_Detrac/3YOLOv8_RAFConv_ACmix2_CSPStage/train/train/weights/last.pt, 6.8MB
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs2/UA_Detrac/3YOLOv8_RAFConv_ACmix2_CSPStage/train/train/weights/best.pt, 6.8MB
+
+🔍 Validating best.pt (saved at epoch 275)...
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:4 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:5 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:6 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:7 (Tesla V100-FHHL-16GB, 16151MiB)
+3YOLOv8_RAFConv_ACmix2_CSPStage summary: 256 layers, 3264298 parameters, 0 gradients, 8.6 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:05<00:00,  2.75it/s]
+                   all        985       7125      0.964       0.94      0.985      0.865
+                   car        985       5952      0.966      0.953      0.989      0.842
+                   van        985        718      0.936      0.915      0.972      0.839
+                   bus        985        400       0.99      0.985      0.995      0.933
+                others        985         55      0.966      0.909      0.983      0.845
+Speed: 0.4ms preprocess, 1.1ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 501.31
+FPS(inference): 884.82
+Results saved to /home/luoluo/work4/YOLOv8.2/runs2/UA_Detrac/3YOLOv8_RAFConv_ACmix2_CSPStage/train/train
+
+
+
+
+
+
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:0 (Tesla V100-FHHL-16GB, 16151MiB)
+3YOLOv8_RAFConv_ACmix2_CSPStage summary: 256 layers, 3264298 parameters, 0 gradients, 8.6 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/UA_Detrac/labels/val.cache... 985 images, 0 backgrounds, 0 corrupt: 100%|██████████| 985/985 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:07<00:00,  7.93it/s]
+                   all        985       7125      0.964       0.94      0.985      0.864
+                   car        985       5952      0.966      0.953      0.989      0.842
+                   van        985        718      0.936      0.913      0.972      0.841
+                   bus        985        400       0.99      0.985      0.995      0.934
+                others        985         55      0.966      0.909      0.983       0.84
+Speed: 0.3ms preprocess, 3.3ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 245.90
+FPS(inference): 304.68
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/UA_Detrac/3YOLOv8_RAFConv_ACmix2_CSPStage/val
+
+========================================
+硬件资源使用报告:
+总运行时间: 14.75秒
+
+CPU平均使用率: 6.3%
+CPU峰值使用率: 18.4%
+
+内存平均使用: 158.6GB
+内存峰值使用: 159.2GB
+
+GPU平均使用率: 17.1%
+GPU峰值使用率: 48%
+GPU显存峰值: 0.2GB
+========================================
