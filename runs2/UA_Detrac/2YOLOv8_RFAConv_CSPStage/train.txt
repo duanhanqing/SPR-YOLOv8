@@ -1,0 +1,59 @@
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:4 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_RFAConv_CSPStage summary: 246 layers, 3013116 parameters, 0 gradients, 8.3 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/UA_Detrac/labels/val.cache... 985 images, 0 backgrounds, 0 corrupt: 100%|██████████| 985/985 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:15<00:00,  3.94it/s]
+                   all        985       7125      0.959      0.949      0.985      0.868
+                   car        985       5952      0.966      0.956      0.988       0.84
+                   van        985        718      0.945      0.929      0.974      0.839
+                   bus        985        400      0.983      0.983      0.994      0.933
+                others        985         55      0.943      0.927      0.984      0.861
+Speed: 0.5ms preprocess, 1.9ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 343.55
+FPS(inference): 528.85
+Results saved to /home/luoluo/work4/YOLOv8.2/runs/UA_Detrac/YOLOv8_ACmix/val/exp
+
+
+
+
+
+
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:0 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_RFAConv_CSPStage summary: 246 layers, 3013116 parameters, 0 gradients, 8.3 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/UA_Detrac/labels/val.cache... 985 images, 0 backgrounds, 0 corrupt: 100%|██████████| 985/985 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  9.41it/s]
+                   all        985       7125      0.959      0.949      0.985      0.868
+                   car        985       5952      0.966      0.956      0.988       0.84
+                   van        985        718      0.945      0.929      0.974      0.839
+                   bus        985        400      0.983      0.983      0.994      0.933
+                others        985         55      0.943      0.927      0.984      0.861
+Speed: 0.4ms preprocess, 2.1ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 336.84
+FPS(inference): 479.15
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/UA_Detrac/2YOLOv8_RFAConv_CSPStage/val
+
+========================================
+硬件资源使用报告:
+总运行时间: 13.60秒
+
+CPU平均使用率: 5.5%
+CPU峰值使用率: 18.5%
+
+内存平均使用: 158.5GB
+内存峰值使用: 159.1GB
+
+GPU平均使用率: 17.4%
+GPU峰值使用率: 52%
+GPU显存峰值: 0.2GB
+========================================

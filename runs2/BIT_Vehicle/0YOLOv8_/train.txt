@@ -1,0 +1,63 @@
+300 epochs completed in 1.420 hours.
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs/BIT_Vehicle/YOLOv8_/train/train/weights/last.pt, 6.3MB
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs/BIT_Vehicle/YOLOv8_/train/train/weights/best.pt, 6.2MB
+
+🔍 Validating best.pt (saved at epoch 185)...
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:4 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:5 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:6 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:7 (Tesla V100-FHHL-16GB, 16151MiB)
+YOLOv8_ summary (fused): 168 layers, 3006818 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:03<00:00,  4.17it/s]
+                   all        985       1009      0.946      0.947      0.971       0.96
+                   SUV        985        126      0.923      0.952      0.959      0.957
+                 Sedan        985        612      0.977      0.972      0.988      0.977
+              Microbus        985         84      0.934      0.929      0.975      0.968
+               Minivan        985         48      0.875      0.871      0.919      0.904
+                 Truck        985         74      0.978      0.959      0.992       0.97
+                   Bus        985         65      0.993          1      0.995      0.981
+Speed: 0.4ms preprocess, 0.5ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 717.70
+FPS(inference): 1856.33
+Results saved to /home/luoluo/work4/YOLOv8.2/runs/BIT_Vehicle/YOLOv8_/train/train
+
+
+
+
+
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:0 (Tesla V100-FHHL-16GB, 16151MiB)
+YOLOv8_ summary (fused): 168 layers, 3006818 parameters, 0 gradients, 8.1 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/BIT_Vehicle/labels/val.cache... 985 images, 0 backgrounds, 0 corrupt: 100%|██████████| 985/985 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:09<00:00,  6.85it/s]
+                   all        985       1009      0.946      0.951      0.972       0.96
+                   SUV        985        126      0.922      0.952       0.96      0.958
+                 Sedan        985        612      0.976      0.972      0.988      0.977
+              Microbus        985         84      0.933      0.929      0.975      0.964
+               Minivan        985         48      0.877      0.896      0.921      0.906
+                 Truck        985         74      0.975      0.959      0.992      0.973
+                   Bus        985         65      0.992          1      0.995       0.98
+Speed: 0.3ms preprocess, 4.9ms inference, 0.0ms loss, 0.7ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 169.53
+FPS(inference): 202.91
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/BIT_Vehicle/0YOLOv8_/val
+
+========================================
+硬件资源使用报告:
+总运行时间: 16.20秒
+
+CPU平均使用率: 7.3%
+CPU峰值使用率: 20.5%
+
+内存平均使用: 158.5GB
+内存峰值使用: 159.2GB
+
+GPU平均使用率: 11.7%
+GPU峰值使用率: 47%
+GPU显存峰值: 0.2GB
+========================================

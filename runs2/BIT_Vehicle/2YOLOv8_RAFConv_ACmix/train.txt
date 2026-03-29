@@ -1,0 +1,62 @@
+300 epochs completed in 2.213 hours.
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs2/BIT_Vehicle/2YOLOv8_RAFConv_ACmix2/train/train/weights/last.pt, 6.9MB
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs2/BIT_Vehicle/2YOLOv8_RAFConv_ACmix2/train/train/weights/best.pt, 6.8MB
+
+🔍 Validating best.pt (saved at epoch 175)...
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:4 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:5 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:6 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:7 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_RAFConv_ACmix2 summary (fused): 215 layers, 3284400 parameters, 0 gradients, 8.6 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:04<00:00,  3.62it/s]
+                   all        985       1009      0.961      0.954      0.977      0.964
+                   SUV        985        126       0.94      0.937      0.971      0.967
+                 Sedan        985        612      0.988       0.97      0.989      0.977
+              Microbus        985         84      0.951      0.929      0.972      0.969
+               Minivan        985         48      0.903      0.917      0.942       0.92
+                 Truck        985         74      0.984      0.973      0.993      0.972
+                   Bus        985         65      0.997          1      0.995       0.98
+Speed: 0.4ms preprocess, 1.4ms inference, 0.0ms loss, 0.4ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 442.41
+FPS(inference): 709.11
+Results saved to /home/luoluo/work4/YOLOv8.2/runs2/BIT_Vehicle/2YOLOv8_RAFConv_ACmix2/train/train
+
+
+
+
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:0 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_RAFConv_ACmix2 summary (fused): 215 layers, 3284400 parameters, 0 gradients, 8.6 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/BIT_Vehicle/labels/val.cache... 985 images, 0 backgrounds, 0 corrupt: 100%|██████████| 985/985 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  9.24it/s]
+                   all        985       1009      0.962      0.954      0.977      0.964
+                   SUV        985        126       0.94      0.937       0.97      0.967
+                 Sedan        985        612      0.988       0.97      0.989      0.977
+              Microbus        985         84      0.951      0.929      0.973      0.969
+               Minivan        985         48      0.908      0.917      0.942      0.915
+                 Truck        985         74      0.984      0.973      0.993      0.974
+                   Bus        985         65      0.997          1      0.995       0.98
+Speed: 0.3ms preprocess, 3.2ms inference, 0.0ms loss, 0.7ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 239.38
+FPS(inference): 310.78
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/BIT_Vehicle/2YOLOv8_RAFConv_ACmix/val
+
+========================================
+硬件资源使用报告:
+总运行时间: 14.13秒
+
+CPU平均使用率: 6.1%
+CPU峰值使用率: 23.8%
+
+内存平均使用: 158.5GB
+内存峰值使用: 159.1GB
+
+GPU平均使用率: 20.9%
+GPU峰值使用率: 66%
+GPU显存峰值: 0.4GB
+========================================

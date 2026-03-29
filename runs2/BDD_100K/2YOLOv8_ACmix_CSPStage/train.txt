@@ -1,0 +1,69 @@
+300 epochs completed in 1.361 hours.
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs3/BDD_100K/2YOLOv8_ACmix_CSPStage/train/train/weights/last.pt, 6.7MB
+Optimizer stripped from /home/luoluo/work4/YOLOv8.2/runs3/BDD_100K/2YOLOv8_ACmix_CSPStage/train/train/weights/best.pt, 6.7MB
+
+🔍 Validating best.pt (saved at epoch 201)...
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:4 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:5 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:6 (Tesla V100-FHHL-16GB, 16151MiB)
+                                                           CUDA:7 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_ACmix_CSPStage summary: 219 layers, 3238678 parameters, 0 gradients, 8.4 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 15/15 [00:05<00:00,  2.89it/s]
+                   all        958       6602      0.934       0.73      0.895      0.732
+                  bike        958          6          1      0.666      0.845      0.524
+                   bus        958         76      0.803      0.645      0.857        0.8
+                   car        958       5482      0.982      0.947      0.989      0.908
+                 motor        958          2          1      0.854      0.995      0.796
+                person        958         55      0.865      0.727       0.87      0.657
+         traffic light        958         36          1      0.424      0.762      0.531
+          traffic sign        958        747      0.969       0.83      0.957      0.826
+                 truck        958        198      0.853      0.742      0.881      0.814
+Speed: 0.4ms preprocess, 0.7ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 639.26
+FPS(inference): 1394.17
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/BDD_100K/2YOLOv8_ACmix_CSPStage/train/train
+
+
+
+
+
+
+
+/opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+(luoluo) (base) luoluo@deqing-gpu-249:~/work4/YOLOv8.2$ /opt/anaconda3/envs/luoluo/bin/python /home/luoluo/work4/YOLOv8.2/myval.py
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/anaconda3/envs/luoluo/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Ultralytics YOLOv8.2.18 🚀 Python-3.9.0 torch-1.13.1+cu116 CUDA:0 (Tesla V100-FHHL-16GB, 16151MiB)
+2YOLOv8_ACmix_CSPStage summary: 219 layers, 3238678 parameters, 0 gradients, 8.4 GFLOPs
+val: Scanning /home/luoluo/work4/YOLOv8.2/datasets/BDD_100K/labels/val.cache... 958 images, 0 backgrounds, 0 corrupt: 100%|██████████| 958/958 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 60/60 [00:06<00:00,  9.61it/s]
+                   all        958       6602      0.935       0.73      0.894      0.734
+                  bike        958          6          1      0.666      0.845      0.524
+                   bus        958         76      0.803      0.645      0.856      0.804
+                   car        958       5482      0.982      0.948      0.988       0.91
+                 motor        958          2          1      0.854      0.995      0.796
+                person        958         55      0.866      0.727       0.87      0.657
+         traffic light        958         36          1      0.424       0.76      0.531
+          traffic sign        958        747       0.97      0.833      0.957      0.832
+                 truck        958        198      0.855      0.742      0.881      0.814
+Speed: 0.3ms preprocess, 1.9ms inference, 0.0ms loss, 0.5ms postprocess per image
+FPS(include:preprocess,inference,postprocess): 375.29
+FPS(inference): 530.66
+Results saved to /home/luoluo/work4/YOLOv8.2/runs3/BDD_100K/2YOLOv8_ACmix_CSPStage/val
+
+========================================
+硬件资源使用报告:
+总运行时间: 13.45秒
+
+CPU平均使用率: 4.9%
+CPU峰值使用率: 16.6%
+
+内存平均使用: 158.6GB
+内存峰值使用: 159.2GB
+
+GPU平均使用率: 14.4%
+GPU峰值使用率: 46%
+GPU显存峰值: 0.2GB
+========================================
